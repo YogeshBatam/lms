@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Admin Signup</h1>
+                     <h6>Please register yourself</h6>
+                </div>
+            
+                <form class="signupForm" (ngSubmit)="register()" #adminForm="ngForm" >
+                    <div class="mb-3">
+                        <label for="librarianUsername" class="form-label">Username</label>
+                        <input required type="text" #librarianUsername="ngModel" [(ngModel)]="adminModel.librarianUsername" id="librarianUsername" name="librarianUsername"/> 
+                        <div *ngIf="librarianUsername.untouched == false && librarianUsername.touched == true && librarianUsername.invalid == true">
+                            <p class="errorMsg"> username cannot be left blank </p>
+                        </div> 
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="librarianPassword" class="form-label"> Password </label>
+                      <input required type="text" #librarianPassword="ngModel" [(ngModel)]="adminModel.librarianPassword" id="librarianPassword" name="librarianPassword"/>
+                      <div *ngIf="librarianPassword.untouched == false && librarianPassword.touched == true && librarianPassword.invalid == true">
+                        <p class="errorMsg"> Password cannot be left blank </p>
+                      </div>    
+                    </div>
+                    <button [disabled]="adminForm.form.invalid" class="btn btn-primary mb-2" type="submit">Signup</button>
+ 
+                </form>
+                <a routerLink="/AdminLogin">Already registered? then login</a>
+            
+             </div>
+        </div>
+    </div>
+</div>
+

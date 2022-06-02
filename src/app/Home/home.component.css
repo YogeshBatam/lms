@@ -1,0 +1,26 @@
+h1{
+  text-align: center;
+  color: aliceblue;
+}
+.menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .menu li{
+    background-color: rgb(218, 119, 119);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  button {
+    background: #ffc600;
+    border: 0;
+    padding: 10px 20px;
+  }
