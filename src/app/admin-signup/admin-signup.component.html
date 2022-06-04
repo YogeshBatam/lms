@@ -18,7 +18,7 @@
 
                     <div class="mb-3">
                       <label for="librarianPassword" class="form-label"> Password </label>
-                      <input required type="text" #librarianPassword="ngModel" [(ngModel)]="adminModel.librarianPassword" id="librarianPassword" name="librarianPassword"/>
+                      <input  required type="text" #librarianPassword="ngModel" [(ngModel)]="adminModel.librarianPassword" id="librarianPassword" name="librarianPassword"/>
                       <div *ngIf="librarianPassword.untouched == false && librarianPassword.touched == true && librarianPassword.invalid == true">
                         <p class="errorMsg"> Password cannot be left blank </p>
                       </div>    

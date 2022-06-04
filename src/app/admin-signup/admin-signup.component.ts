@@ -9,7 +9,7 @@ import { AdminServiceService } from '../admin-service.service';
   styleUrls: ['./admin-signup.component.css']
 })
 export class AdminSignupComponent implements OnInit {
-  adminModel:Admin = new Admin('','');
+  adminModel:Admin = new Admin(0,'','');
   adminService:AdminServiceService;
 
   constructor(adminService:AdminServiceService) {

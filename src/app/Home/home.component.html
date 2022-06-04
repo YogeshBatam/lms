@@ -1,11 +1,67 @@
-<nav class="navbar navbar-light bg-primary">
+<div id="viewport">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <header>
+      <a href="#">Library</a>
+    </header>
+    <ul class="nav">
+      <div class="spacer">
+  
+          <a routerLink="" routerLinkActive="active" class="card"  rel="noopener" >  
+            <span>Books</span>
+          </a>             
+         
+        <a routerLink="" routerLinkActive="active" class="card"  rel="noopener" >  
+          <span>Students</span>
+        </a>
+          
+        <a routerLink="" routerLinkActive="active" class="card"  rel="noopener" >  
+          <span>Issue Books</span>
+        </a>
+          
+        <a routerLink="" routerLinkActive="active" class="card"  rel="noopener" >  
+          <span>Return Books</span>
+        </a>
+
+        <a routerLink="" routerLinkActive="active" class="card"  rel="noopener" >  
+          <span>Fines</span>
+        </a>
+      </div>    
+    </ul>
+  </div>
+  <!-- Content -->
+  <div id="content">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        
+      </div>
+    </nav>
+<br>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+<h1>Welcome</h1>
+<br>
+<br>
+<br>
+<div>
+<footer class="footer">
+<p>All Rights Reserved 2022</p>
+</footer>
+</div>
+  </div>
+</div>
+
+
+
+<!-- <nav class="navbar navbar-light bg-primary">
   <div class="container-fluid">
     <h1> Ganga Library </h1>
     <div class="myProfile">
       <button class="btn btn-success">My Profile</button>
     </div>
     <div class="Logout">
-      <button class="btn btn-success">Logout</button>
+      <button  class="btn btn-success">Logout</button>
     </div>
   </div>
 </nav>
@@ -33,4 +89,4 @@
         </ul>
       </nav>
 </div>
-
+ -->

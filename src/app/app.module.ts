@@ -8,6 +8,9 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminSignupComponent } from './admin-signup/admin-signup.component';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BooklistComponent } from './booklist/booklist.component';
+import { SearchbookbyidComponent } from './searchbookbyid/searchbookbyid.component';
+
 
 
 
@@ -17,6 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     AdminLoginComponent,
     AdminSignupComponent,
+    BooklistComponent,
+    SearchbookbyidComponent
+  
     
   ],
   imports: [

@@ -27,5 +27,11 @@ export class AdminServiceService {
   {
     return this.http.post<Loginadminresponse>(`${this.loginEndPoint}`,loginDetails);
   }
+
+  updateAdmin(admin:Admin):Observable<Object>
+  {
+    console.log('Admin Service - Update Admin called ');
+    return this.http.put<Admin>(`${this.createAdminEndPoint}`,admin);
+  }
   
 }

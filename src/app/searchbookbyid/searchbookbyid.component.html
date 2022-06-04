@@ -1,0 +1,36 @@
+
+<input type="text" #bookId>
+<button (click)="doGetBookInfo(bookId.value)"> Load Book</button><br>
+
+<hr/>
+
+<div *ngIf="isDataFetched == true">
+    <div class="container-fluid">
+        <table class="table table-stripped">
+            <tr>
+                <th> Book Id </th>
+                <th> ISBN </th>
+                <th> Book Name </th>
+                <th> Book Author </th>
+                <th> Book Publisher </th>
+                <th> Book Status </th>
+               
+            </tr>
+            <tr>
+             
+                <td> {{bookdto.bookId }}</td>
+                <td> {{bookdto.isbn }}</td>
+                <td> {{bookdto.bookName }}</td>
+                <td> {{bookdto.bookAuthor }}</td>
+                <td> {{bookdto.bookPublisher }}</td>
+                <td> {{bookdto.status }}</td>
+               
+                
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
+
