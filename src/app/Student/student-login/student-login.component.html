@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light bg-warning">
+    <div class="container-fluid">
+        <img src="" alt="">
+      <h1> Ganga Library </h1>
+    </div>
+</nav>
+    <div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Student Login</h1>
+                     <h6>Please enter username & password</h6>
+                </div>
+            
+                <form class="loginForm" (ngSubmit)="doLogin()" #loginForm="ngForm" >
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Username</label>
+                        <input required type="text" #userName="ngModel" [(ngModel)]="loginModel.userName" id="userName" name="userName"/> 
+                        <div *ngIf="userName.untouched == false && userName.touched == true && userName.invalid == true">
+                            <p class="errorMsg"> username cannot be left blank </p>
+                        </div> 
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input required type="text" #password="ngModel" [(ngModel)]="loginModel.password" id="password" name="password"/>
+                      <div *ngIf="password.untouched == false && password.touched == true && password.invalid == true">
+                        <p class="errorMsg"> Password cannot be left blank </p>
+                    </div>    
+                    </div>
+                   
+                  <a routerLink="/student-home" > <button  [disabled]="loginForm.form.invalid" class=" btn btn-warning"type="submit">Login</button></a> 
+                 </form>
+                 <a routerLink="/StudentSignup">New User? Click to signup!!</a>
+                 <a routerLink="/Forget-password">Forgot Password</a>
+                 <a routerLink="/AdminLogin">Admin Login</a>
+            
+             </div>
+        </div>
+    </div>
+</div>
+</div>

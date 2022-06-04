@@ -1,0 +1,45 @@
+<!-- <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <h1>Issue Book</h1>
+                
+            </div>
+            <form class="issuebookForm" (ngSubmit)="issuebook()" #issuebookForm="ngForm" >
+                <div class="mb-3">
+                    <label for="bookId" class="form-label">Book ID</label>
+                    <input required type="text" #bookId="ngModel" [(ngModel)]="issuebookModel.bookId" id="bookId" name="bookId"/> 
+                    <div *ngIf="bookId.untouched == false && bookId.touched == true && bookId.invalid == true">
+                        <p class="errorMsg"> bookId cannot be left blank </p>
+                    </div> 
+                </div>
+                <div class="mb-3">
+                    <label for="studentId" class="form-label">Student ID</label>
+                    <input required type="text" #studentId="ngModel" [(ngModel)]="issuebookModel.studentId" id="studentId" name="studentId"/> 
+                    <div *ngIf="studentId.untouched == false && bookId.touched == true && studentId.invalid == true">
+                        <p class="errorMsg"> studentId cannot be left blank </p>
+                    </div> 
+                </div>
+                <button [disabled]="issuebookForm.form.invalid" class="btn btn-primary mb-2" type="submit">Load</button>
+                <div class="mb-3">
+                    <label for="DateOfIssue" class="form-label">Issue date</label>
+                    <input required type="text" #dateOfIssue="ngModel" [(ngModel)]="issuebookModel.dateOfIssue" id="dateOfIssue" name="dateOfIssue"/> 
+                    <div *ngIf="dateOfIssue.untouched == false && dateOfIssue.touched == true && dateOfIssue.invalid == true">
+                        <p class="errorMsg"> Issue date cannot be left blank </p>
+                    </div> 
+                </div>
+                <div class="mb-3">
+                    <label for="DateOfReturn" class="form-label">Return date</label>
+                    <input required type="text" #dateOfReturn="ngModel" [(ngModel)]="issuebookModel.dateOfReturn" id="dateOfReturn" name="dateOfReturn"/> 
+                    <div *ngIf="dateOfReturn.untouched == false && dateOfReturn.touched == true && dateOfReturn.invalid == true">
+                        <p class="errorMsg"> Return date cannot be left blank </p>
+                    </div> 
+                </div>
+                <button [disabled]="issuebookForm.form.invalid" class="btn btn-primary mb-2" type="submit">Issue Book</button>
+                 
+            </form>
+        </div>
+    </div>
+</div>
+</div> -->

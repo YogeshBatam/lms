@@ -1,0 +1,18 @@
+/* .card{
+   
+    border: none;
+    width:500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(75, 157, 215);
+    background:linear-gradient(90deg,rgb(103, 179, 234) 0%,rgb(141, 105, 215)100%) ;
+}
+.card h1,h6,a{
+    color:white; 
+}
+label{
+    color:#fff;
+} */

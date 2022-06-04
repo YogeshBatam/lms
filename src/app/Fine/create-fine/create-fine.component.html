@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3">
+<h3>create fine</h3>
+<form (ngSubmit)="onSubmit()">
+    
+<div class="from-group">
+    <label>Student Id</label>
+    <input type="number" class ="form-control" id="studentid"
+    [(ngModel)] = "fine.studentid" name ="studentid">
+</div>
+<div class="from-group">
+    <label>No Of DelayDay</label>
+    <input type="text" class="from-control" id="noOfDelayDays"
+    [(ngModel)] ="fine.noOfDelayDays" name="noOfDelayDays">
+
+</div>
+<div class="from-group">
+    <label>Book id</label>
+    <input type="number" class="from-control" id="bookid"
+    [(ngModel)] ="fine.bookid" name="bookid">
+</div>
+<div class="from-group">
+    <label>Return id</label>
+    <input type="number" class="from-control" id="returnid"
+    [(ngModel)] ="fine.returnId" name="returnid">
+</div>
+<div class="from-group">
+    <label>Issue id</label>
+    <input type="number" class="from-control" id="issueid"
+    [(ngModel)] ="fine.issueid" name="issueid">
+</div>
+<div class="from-group">
+    <label>Fine Date</label>
+    <input type="date" class="from-control" id="finedate"
+    [(ngModel)] ="fine.finedate" name="finedate">
+
+</div>
+<button class ="btn btn-success" type="submit">Submit</button>
+
+
+
+
+</form>
+</div>

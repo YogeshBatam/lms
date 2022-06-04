@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-exapnd-sm bg-primary navbar-dark">
+
+    <ul class ="navbar-nav">
+      <li class = "nav-item">
+        <a routerLink="ReturnBook/getall" routerLinkActive="active" class="nav-link" >ReturnBook List</a>
+    </li>
+     
+      <li class = "nav-item">
+          <a routerLink="ReturnBook/create" routerLinkActive="active" class="nav-link">create-returnbook</a>
+      </li>
+    </ul>
+  
+  
+  </nav>
+  
+  
+  <h1 class="text-center">Return Book</h1>
+  <div class="container">
+  
+  </div>
+ 
+
+<h2> ReturnBook List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> returnId</th>
+            <th> issueId</th>
+            <th> studentId</th>
+            <th> bookId </th>
+            <th>actualReturnDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let returnbook of returnbooks" >
+            <td> {{ returnbook.returnId }} </td>
+            <td> {{ returnbook.issueId }} </td>
+            
+            <td> {{ returnbook.studentId}} </td>
+            <td> {{ returnbook.bookId }}</td>
+            <td> {{ returnbook.actualReturnDate</td>
+            <td>
+                <button (click) = "updatereturnbook(returnbook.returnId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteReturnBook(returnbook.returnId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "returnbookDetails(returnbook.returnId)" class = "btn btn-info" style="margin-left: 10px"> View</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>
+<footer class = "footer">
+    <div class ="container">
+      <span> All Right Reserved 2020</span>
+    </div>
+  </footer>

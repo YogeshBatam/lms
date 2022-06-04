@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-exapnd-sm bg-primary navbar-dark">
+
+  <ul class ="navbar-nav">
+    <li class = "nav-item">
+      <a routerLink="Fine/getall" routerLinkActive="active" class="nav-link" >Fine List</a>
+  </li>
+   
+    <li class = "nav-item">
+        <a routerLink="Fine/create" routerLinkActive="active" class="nav-link">Create a Fine</a>
+    </li>
+  </ul>
+
+
+</nav>
+<h2>Fine Details</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>
+       Fine Id
+      </th>
+      <th>Fine Date</th>
+      <th> Issue Id</th>
+      <th>Return ID</th>
+      <th> No Of DelayDay</th>
+      <th> Fine Amount</th>
+      <th> Action</th>
+    </tr>
+  </thead>
+
+<tbody>
+<tr *ngFor="let fine of fineArr">
+  <td>
+    {{fine.fineid}}</td>
+    
+    <td> {{fine.finedate}}</td>
+    <td> {{fine.issueid }}</td>
+    <td>{{fine.returnId}}</td>
+    <td>{{fine.noOfDelayDays }}</td>
+    <td>{{fine.fineamount }}</td>
+    <td>
+      <button (click) = "updateFine(fine.fineid)" class =" btn btn-info">Update </button>
+      <button (click) = "deleteFine(fine.fineid)" class=" btn btn-info" style = "margin-left: 10px"> Delete</button>
+      <button (click) = "fineDetails(fine.fineid)" class =" btn btn-info" style ="margin-left: 10px ">View</button>
+    </td>
+  >
+  
+
+
+</tr>
+
+</tbody>
+</table>
+

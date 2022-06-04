@@ -1,0 +1,40 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update ReturnBook </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> returnId</label>
+            <input type="text" class ="form-control" id = "returnId"
+                [(ngModel)] = "returnbook.returnId" name = "returnId">
+        </div>
+    
+        <div class="form-group">
+            <label> issueId</label>
+            <input type="text" class ="form-control" id = "issueId"
+                [(ngModel)] = "returnbook.issueId" name = "issueId">
+        </div>
+
+       
+    
+        <div class="form-group">
+            <label> studentId </label>
+            <input type="text" class ="form-control" id = "studentId"
+                [(ngModel)] = "returnbook.studentId" name = "studentId">
+        </div>
+
+        <div class="form-group">
+            <label> bookId </label>
+            <input type="text" class ="form-control" id = "bookId"
+                [(ngModel)] = "returnbook.bookId" name = "bookId">
+        </div>
+
+        <div class="form-group">
+            <label> actualReturnDate </label>
+            <input type="text" class ="form-control" id = "actualReturnDate"
+                [(ngModel)] = "returnbook.actualReturnDate" name = "actualReturnDate">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

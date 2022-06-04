@@ -1,0 +1,59 @@
+
+<nav class="navbar navbar-exapnd-sm bg-warning">
+    <h1>  Ganga Library </h1>
+  <ul class ="navbar-nav">
+    <li class ="nav-item">
+      
+    </li>
+  </ul>
+
+
+</nav>
+<hr>
+
+
+
+<div class="container">
+    Enter Student ID 
+<input type="text" #studentId>
+
+
+<button (click)="getStudentId(studentId.value)" class="btn btn-success" style="margin-left:50px"> Load </button>
+<hr/>
+
+
+<div *ngIf="isDataFetched == true">
+  <div class="container-fluid">
+      <table class="table table-stripped">
+          <tr>
+            <th> Student Id </th>
+              <th> First Name </th>
+              
+              <th> Contact No</th>
+              <th> Email-Id </th>
+              <th> Username </th>
+              <th> Password </th>
+              
+             
+          </tr>
+          <tr>
+            <td> {{student.studentId }}</td>
+              <td> {{student.firstName }}</td>
+              
+              <td> {{student.contactNo }}</td>
+              <td> {{student.emailId }}</td>
+              <td> {{student.userName }}</td>
+              <td> {{student.password }}</td>
+             
+              
+          </tr>
+      </table>
+  </div>
+
+
+</div>
+
+</div>
+
+
+
