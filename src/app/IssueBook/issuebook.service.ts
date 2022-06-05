@@ -9,7 +9,7 @@ import { Issuebook } from './issuebook';
 export class IssuebookService {
 
   
-  private baseURL = "http://localhost:8080/issuebook/";
+  private baseURL = "http://localhost:8080/librarian/";
   createissuebook:string = this.baseURL+'createIssueBook';
   viewAllissuebooks:string = this.baseURL+'viewAllIssueBook';
   viewissuebook:string = this.baseURL+'viewById';

@@ -24,13 +24,7 @@
                         <p class="errorMsg"> Password cannot be left blank </p>
                       </div>    
                     </div>
-                    <div class="mb-3">
-                        <label for="librarianPassword" class="form-label">Confirm Password </label>
-                        <input  required type="text" #librarianPassword="ngModel" [(ngModel)]="adminModel.librarianPassword" id="librarianPassword" name="librarianPassword"/>
-                        <div *ngIf=" librarianPassword.untouched == false && librarianPassword.touched == true && librarianPassword.invalid == true">
-                          <p class="errorMsg"> Password cannot be left blank </p>
-                        </div>    
-                      </div>
+                    
                     <button [disabled]="adminForm.form.invalid" class="btn btn-primary mb-2" type="submit">Signup</button>
  
                 </form>

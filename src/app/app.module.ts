@@ -34,6 +34,8 @@ import { ReturnbookListComponent } from './ReturnBook/returnbook-list/returnbook
 import { ReturnbookUpdateComponent } from './ReturnBook/returnbook-update/returnbook-update.component';
 import { ReturnbookDetailsComponent } from './ReturnBook/returnbook-details/returnbook-details.component';
 import { ReturnbookhomeComponent } from './ReturnBook/returnbookhome/returnbookhome.component';
+import { StudentPageComponent } from './Student/student-page/student-page.component';
+
 
 
 
@@ -72,6 +74,8 @@ import { ReturnbookhomeComponent } from './ReturnBook/returnbookhome/returnbookh
     ReturnbookUpdateComponent,
     ReturnbookDetailsComponent,
     ReturnbookhomeComponent,
+    StudentPageComponent,
+  
 
     
   

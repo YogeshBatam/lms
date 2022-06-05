@@ -27,6 +27,8 @@ import { ReturnbookCreateComponent } from './ReturnBook/returnbook-create/return
 import { ReturnbookUpdateComponent } from './ReturnBook/returnbook-update/returnbook-update.component';
 import { ReturnbookDetailsComponent } from './ReturnBook/returnbook-details/returnbook-details.component';
 import { ReturnbookhomeComponent } from './ReturnBook/returnbookhome/returnbookhome.component';
+import { StudentPageComponent } from './Student/student-page/student-page.component';
+
 
 
 const routes: Routes = [
@@ -45,6 +47,7 @@ const routes: Routes = [
   {path:'StudentList',component:StudentListComponent},
   {path:'Update-student',component:UpdateStudentComponent},
   {path:'Forget-password',component:ForgetPasswordComponent},
+  {path:'student-page',component:StudentPageComponent},
 
   {path: 'IssueBook', component: IssuebookListComponent},
   {path: 'IssueBook/IssueBook/create', component: CreateIssuebookComponent},
@@ -65,9 +68,11 @@ const routes: Routes = [
 
   {path: 'returnBook/updateBook', component: ReturnbookUpdateComponent},
   {path: 'returnBook/allreturnbook', component: ReturnbookDetailsComponent},
-  {path:'returnbookhome',component:ReturnbookhomeComponent}
+  {path:'returnbookhome',component:ReturnbookhomeComponent},
 
-
+  {path: `Book`, component: BooklistComponent},
+  {path: `Book/Book/searchById`, component: SearchbookbyidComponent},
+  {path: '', redirectTo:`Book/Book/getall`,pathMatch:'full'},
  ];
 
 @NgModule({
