@@ -11,8 +11,9 @@ export class ReturnbookService {
   constructor(private httpClient: HttpClient) { }
 
   private baseURL = 'http://localhost:8080/librarian';
+  
   createreturnbook: string =this.baseURL+'/createReturnBook';
-  returnbooklist: string = this.baseURL+'/Allreturnbook';
+  returnbooklist: string = this.baseURL+'/viewAllReturnBook';
   updatereturnbook: string = this.baseURL+'/updateBook';
 
   getReturnBookList(): Observable<ReturnBook[]>{

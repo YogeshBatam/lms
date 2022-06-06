@@ -1,0 +1,52 @@
+<nav class="navbar navbar-exapnd-sm bg-warning">
+    <h1>  Ganga Library </h1>
+  <ul class ="navbar-nav">
+    <li class ="nav-item">
+      
+    </li>
+  </ul>
+
+
+</nav>
+<hr>
+
+<div class="container">
+    Enter Book Name
+<input type="text" #bookName>
+
+
+<button (click)="doGetBookInfoByName(bookName.value)" class="btn btn-success" style="margin-left:50px"> Load </button>
+<hr/>
+
+
+<div *ngIf="isDataFetched == true">
+    <div class="container-fluid">
+        <table class="table table-stripped">
+            <tr>
+                <th> Book Id </th>
+                <th> ISBN </th>
+                <th> Book Name </th>
+                <th> Book Author </th>
+                <th> Book Publisher </th>
+                <th> Book Status </th>
+               
+            </tr>
+            <hr>
+            <tr *ngFor="let book of bookArr">
+             
+                <td> {{book.bookId }}</td>
+                <td> {{book.isbn }}</td>
+                <td> {{book.bookName }}</td>
+                <td> {{book.bookAuthor }}</td>
+                <td> {{book.bookPublisher }}</td>
+                <td> {{book.status }}</td>
+               
+                
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
+

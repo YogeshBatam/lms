@@ -29,11 +29,12 @@ export class CreateIssuebookComponent implements OnInit {
   }
 
   goToIssuebookList(){
-    this.router.navigate(['/issuebooks']);
+    this.router.navigate(['/IssueBook']);
   }
 
   onSubmit(){
     console.log(this.issuebook);
     this.saveIssuebook();
+  
   }
 }

@@ -11,7 +11,7 @@ import { Router} from '@angular/router';
 export class FineListComponent implements OnInit {
 
 
-  fine: Fine = new Fine(0,'',0,0,0,0,0,0);
+  fine: Fine = new Fine(0,new Date(),0,0,0,0,0,0);
   fineArr: Fine[]=[];
  
 

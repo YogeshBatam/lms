@@ -26,7 +26,7 @@
     <thead>
         <tr>
             <th> returnId</th>
-            <th> issueId</th>
+            <th> issuedId</th>
             <th> studentId</th>
             <th> bookId </th>
             <th>actualReturnDate</th>
@@ -35,11 +35,11 @@
     <tbody>
         <tr *ngFor = "let returnbook of returnbooks" >
             <td> {{ returnbook.returnId }} </td>
-            <td> {{ returnbook.issueId }} </td>
+            <td> {{ returnbook.issuedId }} </td>
             
             <td> {{ returnbook.studentId}} </td>
             <td> {{ returnbook.bookId }}</td>
-            <td> {{ returnbook.actualReturnDate</td>
+            <td> {{ returnbook.actualReturnDate}}</td>
             <td>
                 <button (click) = "updatereturnbook(returnbook.returnId)" class = "btn btn-info"> Update</button>
                 <button (click) = "deleteReturnBook(returnbook.returnId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>

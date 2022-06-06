@@ -9,7 +9,7 @@ import { Fine} from '../fine';
 })
 export class FineDetalisComponent implements OnInit {
   fineid: number=0;
-  fine: Fine=new Fine(0,'',0,0,0,0,0,0);
+  fine: Fine=new Fine(0,new Date(),0,0,0,0,0,0);
   
 
   constructor(private route: ActivatedRoute, private FineService: FineService){ }
@@ -17,7 +17,7 @@ export class FineDetalisComponent implements OnInit {
   ngOnInit(): void {
     this.fineid = this.route.snapshot.params['id'];
 
-    this.fine = new Fine(0,'',0,0,0,0,0,0);
+    this.fine = new Fine(0,new Date(),0,0,0,0,0,0);
     this.FineService.getFineById(this.fineid).subscribe( data =>{
       this.fine = data;
     });

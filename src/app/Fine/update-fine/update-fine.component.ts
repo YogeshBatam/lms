@@ -10,7 +10,7 @@ import { FineService } from '../fine.service';
 })
 export class UpdateFineComponent implements OnInit {
   fineService : FineService;
-  fine:Fine = new Fine(0,'',0,0,0,0,0,0);
+  fine:Fine = new Fine(0,new Date(),0,0,0,0,0,0);
    id: number=0;;
    
   constructor(private fineServices: FineService,

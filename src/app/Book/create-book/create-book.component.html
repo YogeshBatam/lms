@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Issuebook </h3>
+    <form (ngSubmit) = "create()">
+    
+        
+    
+        <div class="form-group">
+            <label> Book ISBN : </label>
+            <input type="number" class ="form-control" id = "isbn"
+                [(ngModel)] = "book.isbn" name = "isbn">
+        </div>
+
+        <div class="form-group">
+            <label> Book Name :</label>
+            <input type="text" class ="form-control" id = "bookName"
+                [(ngModel)] = "book.bookName" name = "bookName">
+        </div>
+    
+        <div class="form-group">
+            <label> Book Author :</label>
+            <input type="text" class ="form-control" id = "bookAuthor"
+                [(ngModel)] = "book.bookAuthor" name = "bookAuthor">
+        </div>
+
+        <div class="form-group">
+            <label> Book Publisher  :</label>
+            <input type="text" class ="form-control" id = "bookPublisher"
+                [(ngModel)] = "book.bookPublisher" name = "bookPublisher">
+        </div>
+
+       
+        <button class = "btn btn-success" type ="submit">Add Book</button>
+        
+    
+    </form>
+    </div> 

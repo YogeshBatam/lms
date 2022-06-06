@@ -2,7 +2,7 @@ export class Fine {
     
    bookid: number;
    fineid: number;
-   finedate: string;
+   finedate: Date;
    issueid: number;
    returnId: number;
    studentid: number;
@@ -11,7 +11,7 @@ export class Fine {
 
 constructor ( 
     fineid:number, 
-     finedate:string,
+     finedate:Date,
       issueid:number,
         returnId:number,
           bookid:number,

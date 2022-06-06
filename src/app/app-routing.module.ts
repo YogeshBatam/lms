@@ -28,6 +28,10 @@ import { ReturnbookUpdateComponent } from './ReturnBook/returnbook-update/return
 import { ReturnbookDetailsComponent } from './ReturnBook/returnbook-details/returnbook-details.component';
 import { ReturnbookhomeComponent } from './ReturnBook/returnbookhome/returnbookhome.component';
 import { StudentPageComponent } from './Student/student-page/student-page.component';
+import { CreateBookComponent } from './Book/create-book/create-book.component';
+import { SearchBookbynameComponent } from './Book/search-bookbyname/search-bookbyname.component';
+import { SearchBookbyauthorComponent } from './Book/search-bookbyauthor/search-bookbyauthor.component';
+import { SearchBookbypublisherComponent } from './Book/search-bookbypublisher/search-bookbypublisher.component';
 
 
 
@@ -72,7 +76,11 @@ const routes: Routes = [
 
   {path: `Book`, component: BooklistComponent},
   {path: `Book/Book/searchById`, component: SearchbookbyidComponent},
+  {path:'Book/Book/create',component:CreateBookComponent},
   {path: '', redirectTo:`Book/Book/getall`,pathMatch:'full'},
+  {path:'getBookByName',component:SearchBookbynameComponent},
+  {path:'getBookByAuthor',component:SearchBookbyauthorComponent},
+  {path:'getBookByPublisher',component:SearchBookbypublisherComponent}
  ];
 
 @NgModule({

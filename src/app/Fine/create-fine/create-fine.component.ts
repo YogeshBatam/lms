@@ -11,7 +11,7 @@ import { FineService } from '../fine.service';
 })
 export class CreateFineComponent implements OnInit {
 fineService : FineService;
-  fine:Fine = new Fine(0,'',0,0,0,0,0,0);
+  fine:Fine = new Fine(0,new Date(),0,0,0,0,0,0);
   
   
   constructor(private fineServices: FineService,
@@ -30,7 +30,7 @@ fineService : FineService;
    
  }
  goToFineList(){
-    this.router.navigate(['/fine']);
+    this.router.navigate(['/Fine']);
  }
   
 onSubmit(){

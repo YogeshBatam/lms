@@ -35,6 +35,11 @@ import { ReturnbookUpdateComponent } from './ReturnBook/returnbook-update/return
 import { ReturnbookDetailsComponent } from './ReturnBook/returnbook-details/returnbook-details.component';
 import { ReturnbookhomeComponent } from './ReturnBook/returnbookhome/returnbookhome.component';
 import { StudentPageComponent } from './Student/student-page/student-page.component';
+import { CreateBookComponent } from './Book/create-book/create-book.component';
+import { SearchBookbyauthorComponent } from './Book/search-bookbyauthor/search-bookbyauthor.component';
+import { SearchBookbynameComponent } from './Book/search-bookbyname/search-bookbyname.component';
+import { SearchBookbypublisherComponent } from './Book/search-bookbypublisher/search-bookbypublisher.component';
+
 
 
 
@@ -75,6 +80,11 @@ import { StudentPageComponent } from './Student/student-page/student-page.compon
     ReturnbookDetailsComponent,
     ReturnbookhomeComponent,
     StudentPageComponent,
+
+    CreateBookComponent,
+    SearchBookbyauthorComponent,
+    SearchBookbynameComponent,
+    SearchBookbypublisherComponent
   
 
     

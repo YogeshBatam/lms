@@ -26,7 +26,7 @@ export class ReturnbookCreateComponent implements OnInit {
   }
 
   goToReturnBookList(){
-    this.router.navigate(['/returnBook']);
+    this.router.navigate(['/ReturnBook']);
   }
   
   onSubmit(){
