@@ -13,7 +13,7 @@
                         <label for="librarianUsername" class="form-label">Username</label>
                         <input required type="text" #librarianUsername="ngModel" [(ngModel)]="adminModel.librarianUsername" id="librarianUsername" name="librarianUsername"/> 
                         <div *ngIf="librarianUsername.untouched == false && librarianUsername.touched == true && librarianUsername.invalid == true">
-                            <p class="errorMsg"> username cannot be left blank </p>
+                            <p class="errorMsg"> username cannot be left blank and minimum characters should be 3 </p>
                         </div> 
                     </div>
 
@@ -21,10 +21,20 @@
                       <label for="librarianPassword" class="form-label"> Password </label>
                       <input  required type="text" #librarianPassword="ngModel" [(ngModel)]="adminModel.librarianPassword" id="librarianPassword" name="librarianPassword"/>
                       <div *ngIf="librarianPassword.untouched == false && librarianPassword.touched == true && librarianPassword.invalid == true">
-                        <p class="errorMsg"> Password cannot be left blank </p>
+                        <p class="errorMsg"> Password cannot be left blank and minimum characters should be 6</p>
+                      
+                       
+               
+                       
                       </div>    
+                      
                     </div>
+
                     
+                  
+                        
+                          
+                          
                     <button [disabled]="adminForm.form.invalid" class="btn btn-primary mb-2" type="submit">Signup</button>
  
                 </form>

@@ -12,7 +12,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="text-center">
-                    <h1>Student Login</h1>
+                    <h1>Reader Login</h1>
                      <h6>Please enter username & password</h6>
                 </div>
             
@@ -27,7 +27,7 @@
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label">Password</label>
-                      <input required type="text" #password="ngModel" [(ngModel)]="loginModel.password" id="password" name="password"/>
+                      <input required type="password" #password="ngModel" [(ngModel)]="loginModel.password" id="password" name="password"/>
                       <div *ngIf="password.untouched == false && password.touched == true && password.invalid == true">
                         <p class="errorMsg"> Password cannot be left blank </p>
                     </div>    

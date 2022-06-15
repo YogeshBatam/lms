@@ -9,7 +9,7 @@ import { StudentServiceService } from '../student-service.service';
 })
 export class StudentSignupComponent implements OnInit {
 
-  studentModel:Student = new Student(0,'','',0,'','','');
+  studentModel:Student = new Student(0,'','',0,'','','',[]);
   studentService:StudentServiceService;
 
   constructor(studentService:StudentServiceService) {

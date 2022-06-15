@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class CreateIssuebookComponent implements OnInit {
   issuebookService : IssuebookService;
 
+  todaydate=new Date();
+
   issuebook: Issuebook = new Issuebook(0,0,0,'','','',0);
   constructor(private issuebookServices: IssuebookService,
     private router: Router) { 

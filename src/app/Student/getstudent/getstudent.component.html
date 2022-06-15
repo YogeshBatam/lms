@@ -14,7 +14,7 @@
 
 
 <div class="container">
-    Enter Student ID 
+    Enter Reader ID 
 <input type="text" #studentId>
 
 
@@ -26,15 +26,14 @@
   <div class="container-fluid">
       <table class="table table-stripped">
           <tr>
-            <th> Student Id </th>
+            <th> Reader Id </th>
               <th> First Name </th>
               
               <th> Contact No</th>
               <th> Email-Id </th>
               <th> Username </th>
               <th> Password </th>
-              
-             
+  
           </tr>
           <tr>
             <td> {{student.studentId }}</td>
@@ -44,10 +43,32 @@
               <td> {{student.emailId }}</td>
               <td> {{student.userName }}</td>
               <td> {{student.password }}</td>
-             
               
+              
+     
           </tr>
       </table>
+      <table class="table table-stripped">
+        <thead>
+            <th> Book Id  </th>
+            <th> ISBN </th>
+            <th> Book Name </th> 
+            <th> Book Author </th>
+            <th> Book Publisher </th>
+        </thead>
+        <tbody> 
+          <tr *ngFor="let book of student.issueBook">
+           <td>{{ book.bookId}}</td> 
+           <td>{{ book.isbn}}</td> 
+           <td>{{ book.bookName}}</td> 
+           <td>{{ book.bookAuthor}}</td> 
+           <td>{{ book.bookPublisher}}</td> 
+          
+          </tr>
+        </tbody>
+      </table>
+      
+
   </div>
 
 

@@ -9,7 +9,7 @@ import { StudentServiceService } from '../student-service.service';
   styleUrls: ['./update-student.component.css']
 })
 export class UpdateStudentComponent implements OnInit {
-  student:Student = new Student(0,'','',0,'','','');
+  student:Student = new Student(0,'','',0,'','','',[]);
   studentService!: StudentServiceService;
 
   constructor(studentService:StudentServiceService,private router:Router) {

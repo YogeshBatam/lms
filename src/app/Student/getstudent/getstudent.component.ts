@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from 'src/app/Book/book';
 import { Student } from '../student';
 import { StudentServiceService } from '../student-service.service';
 
@@ -9,7 +10,7 @@ import { StudentServiceService } from '../student-service.service';
 })
 export class GetstudentComponent implements OnInit {
   service:StudentServiceService;
-  student:Student = new Student(0,'','',0,'','','');
+  student:Student = new Student(0,'','',0,'','','',[]);
   isDataFetched:boolean = false;
 
   
@@ -35,9 +36,7 @@ export class GetstudentComponent implements OnInit {
         console.log(error);
       }
     );
-
-
-
   }
+  
 
 }

@@ -12,6 +12,8 @@ export class AdminSignupComponent implements OnInit {
   adminModel:Admin = new Admin(0,'','');
   adminService:AdminServiceService;
 
+  
+
   constructor(adminService:AdminServiceService) {
     this.adminService = adminService;
    }
@@ -30,7 +32,7 @@ export class AdminSignupComponent implements OnInit {
       }
     );
   }
-
+ 
  
 
 }
